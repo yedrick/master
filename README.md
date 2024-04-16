@@ -1,3 +1,3 @@
-# Solunes Master Package
+# Mastery Master Package
 
 Prohibido su uso sin autorización.

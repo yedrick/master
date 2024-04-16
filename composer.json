@@ -1,7 +1,7 @@
 {
     "name": "yedrick/master",
     "description": "Paquete maestro para Yerson.",
-    "version": "1.0.0",
+    "version": "1.0",
     "keywords": ["laravel", "yerson", "mastery"],
     "license": "MIT",
     "authors": [

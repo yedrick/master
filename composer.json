@@ -1,4 +1,4 @@
-rick{
+{
     "name": "yedrick/master",
     "description": "Paquete maestro para Yerson.",
     "keywords": ["laravel", "yerson", "mastery"],
@@ -49,7 +49,7 @@ rick{
             "src/views"
         ],
         "psr-4": {
-            "Mastery\\Master\\": "src/"
+            "Yedrick\\Master\\": "src/"
         }
     },
     "minimum-stability": "dev",

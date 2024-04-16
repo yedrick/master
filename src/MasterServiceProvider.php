@@ -34,13 +34,13 @@ class MasterServiceProvider extends ServiceProvider {
 
         /* Comandos de Consola */
         $this->commands([
-            \Solunes\Master\App\Console\Deploy::class,
-            \Solunes\Master\App\Console\ModelMaster::class,
+            \yedrick\Master\App\Console\Deploy::class,
+            \yedrick\Master\App\Console\ModelMaster::class,
         ]);
 
-        $this->mergeConfigFrom(
-            __DIR__ . '/config/solunes.php', 'solunes'
-        );
+        // $this->mergeConfigFrom(
+        //     __DIR__ . '/config/solunes.php', 'solunes'
+        // );
     }
     
 }

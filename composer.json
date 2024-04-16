@@ -49,7 +49,7 @@
             "src/views"
         ],
         "psr-4": {
-            "Mastery\\Master\\": "src/"
+            "Yedrick\\Master\\": "src/"
         }
     },
     "minimum-stability": "dev",

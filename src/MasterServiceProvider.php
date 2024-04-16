@@ -34,8 +34,8 @@ class MasterServiceProvider extends ServiceProvider {
 
         /* Comandos de Consola */
         $this->commands([
-            \yedrick\Master\App\Console\Deploy::class,
-            \yedrick\Master\App\Console\ModelMaster::class,
+            \yedrick\Master\App\Console\Commands\Deploy::class,
+            \yedrick\Master\App\Console\Commands\ModelMaster::class,
         ]);
 
         // $this->mergeConfigFrom(

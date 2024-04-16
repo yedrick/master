@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\App\Listeners;
+namespace yedrick\Master\App\Listeners;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;

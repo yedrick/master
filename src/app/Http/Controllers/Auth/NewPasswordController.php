@@ -1,8 +1,8 @@
 <?php
 
-namespace Mastery\Master\App\Http\Controllers\Auth;
+namespace yedrick\Master\App\Http\Controllers\Auth;
 
-use Mastery\Master\App\Http\Controllers\Controller;
+use yedrick\Master\App\Http\Controllers\Controller;
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;

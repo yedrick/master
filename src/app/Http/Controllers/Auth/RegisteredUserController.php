@@ -1,10 +1,10 @@
 <?php
 
-namespace Mastery\Master\App\Http\Controllers\Auth;
+namespace yedrick\Master\App\Http\Controllers\Auth;
 
-use Mastery\Master\App\Http\Controllers\Controller;
+use yedrick\Master\App\Http\Controllers\Controller;
 use App\Models\User;
-use Mastery\Master\App\Providers\RouteServiceProvider;
+use yedrick\Master\App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

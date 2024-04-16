@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\App\Models;
+namespace yedrick\Master\App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

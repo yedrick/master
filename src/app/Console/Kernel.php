@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\App\Console;
+namespace yedrick\Master\App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;

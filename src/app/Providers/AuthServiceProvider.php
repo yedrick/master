@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\App\Providers;
+namespace yedrick\Master\App\Providers;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;

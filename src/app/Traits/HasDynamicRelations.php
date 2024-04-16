@@ -1,10 +1,10 @@
 <?php
 
-namespace Mastery\Master\App\Traits;
+namespace yedrick\Master\App\Traits;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Mastery\Master\App\Models\Field;
-use Mastery\Master\App\Models\Node;
+use yedrick\Master\App\Models\Field;
+use yedrick\Master\App\Models\Node;
 
 trait HasDynamicRelations{
     // creamos una funcion llamada relation donde resive el nombre de la relacion y hace la relacion

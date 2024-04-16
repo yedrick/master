@@ -1,11 +1,11 @@
 <?php
 
-namespace Mastery\Master\App\Http\Controllers;
+namespace yedrick\Master\App\Http\Controllers;
 
-use Mastery\Master\App\Exports\NodeModelExport;
-use Mastery\Master\App\Models\Field;
-use Mastery\Master\App\Models\FieldOption;
-use Mastery\Master\App\Models\Node ;
+use yedrick\Master\App\Exports\NodeModelExport;
+use yedrick\Master\App\Models\Field;
+use yedrick\Master\App\Models\FieldOption;
+use yedrick\Master\App\Models\Node ;
 use Illuminate\Http\Request;
 use Illuminate\Routing\UrlGenerator;
 

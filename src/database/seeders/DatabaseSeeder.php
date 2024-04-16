@@ -1,8 +1,8 @@
 <?php
 
-namespace Mastery\Master\Database\Seeders;
+namespace yedrick\Master\Database\Seeders;
 
-use Mastery\Master\Database\Seeders\MasterSeeder;
+use yedrick\Master\Database\Seeders\MasterSeeder;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder

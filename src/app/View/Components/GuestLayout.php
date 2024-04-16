@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\App\View\Components;
+namespace yedrick\Master\App\View\Components;
 
 use Illuminate\View\Component;
 

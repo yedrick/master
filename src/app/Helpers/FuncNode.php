@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\App\Helpers;
+namespace yedrick\Master\App\Helpers;
 
 use App\Imports\ImportExcel;
 use App\Imports\NodeImport;

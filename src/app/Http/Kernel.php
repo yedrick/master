@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\App\Http;
+namespace yedrick\Master\App\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\App\Exceptions;
+namespace yedrick\Master\App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;

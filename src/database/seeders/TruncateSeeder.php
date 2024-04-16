@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\Database\Seeds;
+namespace yedrick\Master\Database\Seeds;
 use Illuminate\Database\Seeder;
 use DB;
 

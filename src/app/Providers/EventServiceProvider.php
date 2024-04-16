@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\App\Providers;
+namespace yedrick\Master\App\Providers;
 
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -29,7 +29,7 @@ class EventServiceProvider extends ServiceProvider
     {
         //  $events->listen('eloquent.created: App\Models\Node', '\App\Listeners\CreateNode');
         //
-        Event::listen('eloquent.created: Mastery\Master\App\Models\Node', [Mastery\Master\App\Listeners\CreateNode::class, 'handle']);
+        Event::listen('eloquent.created: yedrick\Master\App\Models\Node', [yedrick\Master\App\Listeners\CreateNode::class, 'handle']);
 
     }
 }

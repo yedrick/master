@@ -1,7 +1,7 @@
 <?php
 
-use Mastery\Master\App\Http\Controllers\CustomerController;
-use Mastery\Master\App\Http\Controllers\MainController;
+use yedrick\Master\App\Http\Controllers\CustomerController;
+use yedrick\Master\App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
 /*

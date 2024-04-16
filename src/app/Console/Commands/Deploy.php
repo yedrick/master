@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\App\Console\Commands;
+namespace yedrick\Master\App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Artisan;

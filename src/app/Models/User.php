@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\App\Models;
+namespace yedrick\Master\App\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

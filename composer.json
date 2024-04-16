@@ -1,8 +1,8 @@
 {
-    "name": "mastery/master",
+    "name": "yedrick/master",
     "description": "Paquete maestro para Yerson.",
     "version": "1.0.0",
-    "keywords": ["laravel", "yerson", "mastery"],
+    "keywords": ["laravel", "yerson", "yedrick"],
     "license": "MIT",
     "authors": [
         {
@@ -49,7 +49,7 @@
             "src/views"
         ],
         "psr-4": {
-            "Mastery\\Master\\": "src/"
+            "Yedrick\\Master\\": "src/"
         }
     },
     "minimum-stability": "dev",

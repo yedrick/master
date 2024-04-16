@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master;
+namespace yedrick\Master;
 
 use Illuminate\Support\ServiceProvider;
 

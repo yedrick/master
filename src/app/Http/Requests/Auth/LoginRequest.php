@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\App\Http\Requests\Auth;
+namespace yedrick\Master\App\Http\Requests\Auth;
 
 use Illuminate\Auth\Events\Lockout;
 use Illuminate\Foundation\Http\FormRequest;

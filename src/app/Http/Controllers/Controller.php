@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\App\Http\Controllers;
+namespace yedrick\Master\App\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

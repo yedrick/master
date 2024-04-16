@@ -1,8 +1,8 @@
 <?php
 
-namespace Mastery\Master\App\Exports;
+namespace yedrick\Master\App\Exports;
 
-use Mastery\Master\App\Models\Field;
+use yedrick\Master\App\Models\Field;
 use Maatwebsite\Excel\Concerns\FromQuery;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\WithMapping;

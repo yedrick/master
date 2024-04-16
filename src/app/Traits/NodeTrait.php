@@ -1,8 +1,8 @@
 <?php
-    namespace Mastery\Master\App\Traits;
+    namespace yedrick\Master\App\Traits;
 
-    use Mastery\Master\App\Models\Node;
-    use Mastery\Master\App\Models\Field;
+    use yedrick\Master\App\Models\Node;
+    use yedrick\Master\App\Models\Field;
 
     trait NodeTrait{
 

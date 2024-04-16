@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\App\Http\Middleware;
+namespace yedrick\Master\App\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as Middleware;
 

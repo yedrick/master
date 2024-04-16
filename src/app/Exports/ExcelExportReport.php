@@ -1,6 +1,6 @@
 <?php
 
-namespace Mastery\Master\App\Exports;
+namespace yedrick\Master\App\Exports;
 
 use Illuminate\Support\Collection;
 use Maatwebsite\Excel\Concerns\FromCollection;

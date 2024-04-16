@@ -1,0 +1,60 @@
+{
+    "name": "mastery/master",
+    "description": "Paquete maestro para Yerson.",
+    "version": "1.0.0",
+    "keywords": ["laravel", "yerson", "mastery"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yerson Jarandilla",
+            "email": "yerfe717@gmail.com"
+        }
+    ],
+    "require": {
+        "barryvdh/laravel-dompdf": "^2.0",
+        "doctrine/dbal": "^3.8",
+        "fruitcake/laravel-cors": "^2.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "laravel/framework": "^8.75",
+        "laravel/sanctum": "^2.11",
+        "laravel/tinker": "^2.5",
+        "maatwebsite/excel": "^3.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "classmap": [
+            "src/database/migrations",
+            "src/database/seeders",
+            "src/app",
+            "src/app/Console",
+            "src/app/Exceptions",
+            "src/app/Exports",
+            "src/app/Http",
+            "src/app/Http/Controllers",
+            "src/app/Http/Controllers/Auth/",
+            "src/app/Http/Middleware",
+            "src/app/Http/Requests",
+            "src/app/Listeners",
+            "src/app/Models",
+            "src/app/Providers",
+            "src/app/Traits",
+            "src/app/View",
+            "src/app/View/Components",
+            "src/assets",
+            "src/config",
+            "src/lang",
+            "src/routes",
+            "src/views"
+        ],
+        "psr-4": {
+            "Mastery\\Master\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "scripts": {
+        "test": "phpunit"
+    },
+    "prefer-stable": true
+}

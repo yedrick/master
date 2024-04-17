@@ -13,7 +13,7 @@ class TruncateNodeSeeder extends Seeder {
             DB::table('fields')->truncate();
             DB::table('field_options')->truncate();
             DB::table('menus')->truncate();
-            DB::table('menu_translations')->truncate();
+            DB::table('menu_translation')->truncate();
             DB::table('image_folders')->truncate();
             DB::table('image_sizes')->truncate();
             Schema::enableForeignKeyConstraints();

@@ -36,6 +36,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        \Log::info('rutas');
         $this->configureRateLimiting();
 
         $this->routes(function () {

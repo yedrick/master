@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Schema;
 use DB;
 
 class TruncateNodeSeeder extends Seeder {

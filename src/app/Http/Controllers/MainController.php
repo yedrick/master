@@ -17,6 +17,8 @@ class MainController extends Controller{
 
 
     public function modelList($nodeName){
+        \Log::info('modelList');
+        
         $node = Node::where('name', $nodeName)->first();
         if ($node) {
             if (class_exists($node->model)) {

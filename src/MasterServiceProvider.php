@@ -14,6 +14,9 @@ class MasterServiceProvider extends ServiceProvider {
             __DIR__ . '/config' => config_path()
         ], 'config');
 
+        /* Cargar Migrations */
+        $this->loadMigrationsFrom(__DIR__.'/path/to/migrations');
+
         /* Cargar Traducciones */
         $this->loadTranslationsFrom(__DIR__.'/lang', 'master');
 

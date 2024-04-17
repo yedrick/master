@@ -4,30 +4,30 @@ namespace yedrick\Master\App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class FieldOption extends Model{
-
+class FieldOption extends Model {
+    
     protected $table = 'field_options';
-    protected $with = [];
-    public $timestamps=true;
+    public $timestamps = false;
 
-        /* Create rules */
+    public $translatedAttributes = ['label'];
+    protected $fillable = ['name','label'];
+
+    /* Creating rules */
     public static $rules_create = array(
-	);
-		/* Updating rules */
+        'name'=>'required',
+        'active'=>'required',
+        'label'=>'required',
+    );
+
+    /* Updating rules */
     public static $rules_edit = array(
-        "id"=>"required",
-
-    );
-        /* Read rules */
-    public static $rules_read = array(
-        "id"=>"required",
-    );
-        /* Delete rules */
-    public static $rules_remove = array(
-        "id"=>"required",
+        'name'=>'required',
+        'active'=>'required',
+        'label'=>'required',
     );
 
-
-    // Definir relaciones y atributos aquí
+    public function field() {
+        return $this->belongsTo('Solunes\Master\App\Field', 'parent_id');
+    }
 
 }

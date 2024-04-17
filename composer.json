@@ -57,7 +57,7 @@
         "test": "phpunit",
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan vendor:publish --tag=seeders --tag=config --tag=migrations --force"
+            "@php artisan vendor:publish --tag=seeders --tag=config --force"
         ]
     },
     "prefer-stable": true

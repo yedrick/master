@@ -1,5 +1,6 @@
 <?php
 
+namespace yedrick\Master\App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

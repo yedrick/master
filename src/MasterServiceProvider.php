@@ -18,10 +18,6 @@ class MasterServiceProvider extends ServiceProvider {
             __DIR__ . '/database/seeders/' => database_path('seeders'),
         ], 'seeders');
 
-        $this->publishes([
-            __DIR__.'/database/migrations/2024_01_29_202020_data_base.php' => database_path('migrations/2024_01_29_202020_data_base.php'),
-        ], 'migrations');
-
         /* Cargar Migrations */
         $this->loadMigrationsFrom(__DIR__.'/path/to/migrations');
 

@@ -42,9 +42,11 @@ class Deploy extends Command
     public function handle(){
         $this->info('Iniciando...');
         Artisan::call('config:cache');
+        Artisan::call('migrate:reset');
         $this->info('Migrate...');
         Artisan::call('migrate', ['--path'=>'/vendor/yedrick/master/src/database/migrations']);
         Artisan::call('migrate', ['--path'=>'/database/migrations']);
+        Artisan::call('db:seed', ['--class' => 'TruncateSeeder']);
         $this->info('Migrate:refresh...');
         // Artisan::call('migrate:fresh');
         \yedrick\Master\App\Helpers\FuncNode::getTables();

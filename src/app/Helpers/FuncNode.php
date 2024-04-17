@@ -209,7 +209,7 @@ class FuncNode {
             preg_match("/^enum\((.*)\)$/", $data_column, $matches);
             $enumOptions = explode("','", $matches[1]);
             foreach( $enumOptions as $option ) {
-                $nwFieldOption = new \App\Models\FieldOption;
+                $nwFieldOption = new FieldOption();
                 $nwFieldOption->parent_id = $field->id;
                 $nwFieldOption->name  = str_replace(['"', "'", '´'], '', $option);
                 $nwFieldOption->label = trans('admin.'. str_replace(['"', "'", '´'], '', $option));

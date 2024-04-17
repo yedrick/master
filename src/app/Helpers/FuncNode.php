@@ -2,11 +2,11 @@
 
 namespace yedrick\Master\App\Helpers;
 
-use App\Imports\ImportExcel;
-use App\Imports\NodeImport;
-use App\Models\Field;
-use App\Models\FieldOption;
-use App\Models\Node;
+use yedrick\Master\App\Imports\ImportExcel;
+use yedrick\Master\App\Imports\NodeImport;
+use yedrick\Master\App\Models\Field;
+use yedrick\Master\App\Models\FieldOption;
+use yedrick\Master\App\Models\Node;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
@@ -29,7 +29,7 @@ class FuncNode {
 			return !in_array( $el, $ignoreTables);
 		}));
         // return $tables;
-        \Func::createNodes($tables);
+        \yedrick\Master\App\Helpers\FuncNode::createNodes($tables);
     }
 
 
@@ -97,14 +97,14 @@ class FuncNode {
 
 
     public static function creationNodeFields() {
-        $nodes=\App\Models\Node::get();
+        $nodes=Node::get();
         foreach ($nodes as $key => $node) {
             $table_name = $node->table_name;
-            $columns=\Func::getColumnMap($table_name);
+            $columns=\yedrick\Master\App\Helpers\FuncNode::getColumnMap($table_name);
             $order=1;
             foreach ($columns as $key => $column) {
                 // \Log::info($column);
-                \Func::field_creation($node,$column,$order);
+                \yedrick\Master\App\Helpers\FuncNode::field_creation($node,$column,$order);
                 $order++;
             }
         }
@@ -136,7 +136,7 @@ class FuncNode {
             $value = $trans_name;
             $model='\App\\Models\\'.str_replace('_','-',Str::studly($trans_name));
             if($name=='parent_id') {
-                $referent=\Func::getForeignKeyInfo($table_name,$name);
+                $referent=\yedrick\Master\App\Helpers\FuncNode::getForeignKeyInfo($table_name,$name);
                 if($referent){
                     $parent=$value=$referent->REFERENCED_TABLE_NAME;
                 }

@@ -46,6 +46,7 @@ class Deploy extends Command
         $this->info('Migrate...');
         Artisan::call('migrate', ['--path'=>'/vendor/yedrick/master/src/database/migrations']);
         Artisan::call('migrate', ['--path'=>'/database/migrations']);
+        $this->info('truncate...');
         Artisan::call('db:seed', ['--class' => 'TruncateSeeder']);
         $this->info('Migrate:refresh...');
         // Artisan::call('migrate:fresh');

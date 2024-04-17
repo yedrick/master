@@ -14,6 +14,10 @@ class MasterServiceProvider extends ServiceProvider {
             __DIR__ . '/config' => config_path()
         ], 'config');
 
+        $this->publishes([
+            __DIR__ . '/database/seeders/' => database_path('seeders'),
+        ], 'seeders');
+
         /* Cargar Migrations */
         $this->loadMigrationsFrom(__DIR__.'/path/to/migrations');
 

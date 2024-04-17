@@ -18,6 +18,8 @@ class MasterServiceProvider extends ServiceProvider {
             __DIR__ . '/database/seeders/' => database_path('seeders'),
         ], 'seeders');
 
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+
         /* Cargar Traducciones */
         $this->loadTranslationsFrom(__DIR__.'/lang', 'master');
 

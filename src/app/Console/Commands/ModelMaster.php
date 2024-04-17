@@ -28,7 +28,7 @@ class ModelMaster extends Command
 
     protected function createFile($type,$name,$table){
         // Determine the file path based on type and name
-        // $filePath = app_path('Models' . DIRECTORY_SEPARATOR . $name . '.php');
+        $filePath = app_path('Models' . DIRECTORY_SEPARATOR . $name . '.php');
 
         // Verificar si el archivo ya existe
         if ($this->filesystem->exists($filePath)) {

@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::group(['middleware' => 'auth'], function() {
+// Route::group(['middleware' => 'auth'], function() {
     // Route::get('model-list/{nodeName}', 'MainController@index');
     Route::get('model-list/{nodeName}',[MainController::class,'modelList'])->name('model.list');
     // modelCreate
@@ -30,7 +30,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('export-node/{nodeName}', [MainController::class,'exportNode'])->name('model.export');
 
    
-});
+// });
 
 Route::get('test',[CustomerController::class,'getTest'])->name('test');
 

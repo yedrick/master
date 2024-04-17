@@ -54,11 +54,7 @@
     },
     "minimum-stability": "dev",
     "scripts": {
-        "test": "phpunit",
-        "post-autoload-dump": [
-            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan vendor:publish --tag=seeders --tag=config --force"
-        ]
+        "test": "phpunit"
     },
     "prefer-stable": true
 }

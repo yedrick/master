@@ -7,13 +7,15 @@ use DB;
 class TruncateNodeSeeder extends Seeder {
         
         public function run(){
-            \yedrick\Master\App\Models\Field::truncate();
-            \yedrick\Master\App\Models\Node::truncate();
-            \yedrick\Master\App\Models\FieldOption::truncate();
-            \yedrick\Master\App\Models\Menu::truncate();
-            \yedrick\Master\App\Models\MenuTranslation::truncate();
-            \yedrick\Master\App\Models\ImageFolder::truncate();
-            \yedrick\Master\App\Models\ImageSize::truncate();
+            Schema::disableForeignKeyConstraints();
+            DB::table('nodes')->truncate();
+            DB::table('fields')->truncate();
+            DB::table('field_options')->truncate();
+            DB::table('menus')->truncate();
+            DB::table('menu_translations')->truncate();
+            DB::table('image_folders')->truncate();
+            DB::table('image_sizes')->truncate();
+            Schema::enableForeignKeyConstraints();
 
         }
 

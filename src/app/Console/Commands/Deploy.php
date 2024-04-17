@@ -46,7 +46,10 @@ class Deploy extends Command
         $this->info('Migrate...');
         Artisan::call('migrate', ['--path'=>'/vendor/yedrick/master/src/database/migrations']);
         Artisan::call('migrate', ['--path'=>'/database/migrations']);
+
         $this->info('Migrate:refresh...');
+        // llamar a la seeder apra vaciar tablas
+        Artisan::call('db:seed', ['--class' => 'TruncateNodeSeeder']);
         // Artisan::call('migrate:fresh');
         \yedrick\Master\App\Helpers\FuncNode::getTables();
         $this->info('Creacion de modelos...');

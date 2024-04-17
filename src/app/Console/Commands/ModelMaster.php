@@ -37,7 +37,9 @@ class ModelMaster extends Command
         }
         // Define a template path based on the type
         // $templatePath = __DIR__ . '/stubs/' . $type . '.stub';
-        $templatePath = base_path('resources/views/stubs/' . $type . '.stub');
+        // debemos apuntar al vendro del master
+        $templatePath = base_path('vendor/yedrick/master/src/stubs/'.$type.'.stub');
+        // $templatePath = base_path('resources/views/stubs/' . $type . '.stub');
 
         // Load the template content
         $template = $this->filesystem->get($templatePath);

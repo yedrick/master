@@ -50,8 +50,10 @@ class FuncNode {
         foreach ($nodes as $key => $node) {
             $table_name = $node->table_name;
             $model = str_replace('_','-',Str::studly(Str::singular($table_name)));
+            // validar q no exista el modelo en el vendor
+            $model_exist_master=base_path('vendor/yedrick/master/src/app/Models/'.$model.'.php');
             $model_exist=app_path('Models\\'.$model.'.php');
-            if(!file_exists($model_exist)){
+            if(!file_exists($model_exist) && !file_exists($model_exist_master)){
                 Artisan::call('make:model-master', [
                         'table' => $table_name
                 ]);

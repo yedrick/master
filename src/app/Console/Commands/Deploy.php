@@ -44,13 +44,15 @@ class Deploy extends Command
         Artisan::call('config:cache');
         $this->info('Migrate...');
         Artisan::call('migrate:fresh');
-        \Func::getTables();
+        \yedrick\Master\App\Helpers\FuncNode::getTables();
         $this->info('Creacion de modelos...');
-        \Func::createModels();
+        \yedrick\Master\App\Helpers\FuncNode::createModels();
         $this->info('Creacion de fileds...');
-        \Func::creationNodeFields();
-        $this->info('Ejecutando el seeder...');
-        Artisan::call('db:seed', ['--class' => 'MasterSeeder']);
+        \yedrick\Master\App\Helpers\FuncNode::creationNodeFields();
+        if(config('master.deploy_seed')){
+            $this->info('Ejecutando el seeder...');
+            Artisan::call('db:seed', ['--class' => 'MasterSeeder']);
+        }
         //importar datos de excel
         // \Func::importExcel();
 

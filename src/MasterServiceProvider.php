@@ -30,7 +30,7 @@ class MasterServiceProvider extends ServiceProvider {
         $loader = \Illuminate\Foundation\AliasLoader::getInstance();
         $loader->alias('Excel', 'Maatwebsite\Excel\Facades\Excel');
         $loader->alias('PDF', 'Barryvdh\Snappy\Facades\SnappyPdf');
-        $loader->alias('FuncNode', '\Solunes\Master\App\Helpers\FuncNode');
+        $loader->alias('FuncNode', '\yedrick\Master\App\Helpers\FuncNode');
 
         /* Comandos de Consola */
         $this->commands([

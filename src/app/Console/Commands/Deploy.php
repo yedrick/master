@@ -43,6 +43,7 @@ class Deploy extends Command
         $this->info('Iniciando...');
         Artisan::call('config:cache');
         $this->info('Migrate...');
+        Artisan::callSilent('migrate', ['--path'=>'/vendor/yedrick/master/src/database/migrations']);
         Artisan::call('migrate:fresh');
         \yedrick\Master\App\Helpers\FuncNode::getTables();
         $this->info('Creacion de modelos...');

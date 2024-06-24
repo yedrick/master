@@ -51,13 +51,6 @@
     "scripts": {
         "test": "phpunit"
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Yedrick\\Master\\Providers\\MasterServiceProvider"
-            ]
-        }
-    },
     "prefer-stable": true
     
 }

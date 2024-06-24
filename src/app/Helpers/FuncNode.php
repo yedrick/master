@@ -36,10 +36,17 @@ class FuncNode {
     public static function createNodes($tablas) {
         foreach ($tablas as $key => $tabla) {
             $name=str_replace('_','-',Str::singular($tabla));
+            $model=null;
+            if (file_exists(app_path('Models\\'.str_replace('_','-',Str::studly($name)).'.php'))) {
+                $model = '\App\\Models\\'.str_replace('_','-',Str::studly($name));
+            }elseif (file_exists(base_path('vendor/yedrick/master/src/app/Models/'.str_replace('_','-',Str::studly($name)).'.php'))){
+                $model = '\yedrick\Master\App\Models\\'.str_replace('_','-',Str::studly($name));
+            }
             $node=Node::create([
                 'name'=>$name,
                 'table_name'=>$tabla,
                 'singular'=>'node.'.$name,
+                'model'=>$model,
                 'plural'=>'nodes.'.$name,
             ]);
         }

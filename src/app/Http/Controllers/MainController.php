@@ -40,9 +40,6 @@ class MainController extends Controller{
                             $data = $data->where($fiel_name, 'like', '%'.$search.'%');
                         }
                     }
-
-
-
                     $data = $data->get();
                     // Obtén los atributos ocultos del modelo
                     $hiddenAttributes = $model->getHidden();
@@ -53,7 +50,7 @@ class MainController extends Controller{
                     });
 
 
-                    return view('model.list', compact('data', 'fields','model','node','fields_models'));
+                    return view('master::model.list', compact('data', 'fields','model','node','fields_models'));
                 }else{
                     abort(404); // Maneja el caso donde el modelo no se encuentra en la base de datos
                 }
@@ -75,7 +72,7 @@ class MainController extends Controller{
             $options = FieldOption::whereIn('parent_id', $fields->pluck('id')->toArray())
                 ->get();
 
-            return view('model.create', compact('fields', 'options','node'));
+            return view('master::model.create', compact('fields', 'options','node'));
         } else {
             abort(404); // Maneja el caso donde el nodo no se encuentra en la base de datos
         }
@@ -105,7 +102,7 @@ class MainController extends Controller{
             });
             // $model->makeHidden(['password', 'remember_token', 'email_verified_at']);
 
-            return view('model.create', compact('fields', 'options', 'model','node'));
+            return view('master::model.create', compact('fields', 'options', 'model','node'));
         } else {
             abort(404); // Maneja el caso donde el nodo no se encuentra en la base de datos
         }

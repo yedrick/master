@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="flex items-center shrink-0">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block w-auto h-10 text-gray-600 fill-current" />
+                        <!-- <x-application-logo class="block w-auto h-10 text-gray-600 fill-current" /> -->
                     </a>
                 </div>
 
@@ -14,21 +14,6 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('model.list', ['nodeName' => 'unit'])" :active="request()->segment(2) ==='unit'">
-                        {{ __('Unidad') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('model.list', ['nodeName'=> 'product'])" :active="request()->segment(2) ==='product'">
-                        {{ __('Productos') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('model.list', ['nodeName'=> 'purchase'])" :active="request()->segment(2) ==='purchase'">
-                        {{ __('Compras') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('pedido')" :active="request()->routeIs('pedido')">
-                        {{ __('Pedido') }}
-                    </x-nav-link>
-                    <x-nav-link :href="route('pedidos')" :active="request()->routeIs('pedidos')">
-                        {{ __('Pedidos') }}
                     </x-nav-link>
                 </div>
 
@@ -81,18 +66,6 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
-            </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('model.list', ['nodeName' => 'unit'])" :active="request()->segment(2) ==='unit'">
-                {{ __('Unidad') }}
-            </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('model.list', ['nodeName'=> 'product'])" :active="request()->segment(2) ==='product'">
-                {{ __('Productos') }}
-            </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('model.list', ['nodeName'=> 'purchase'])" :active="request()->segment(2) ==='purchase'">
-                {{ __('Compras') }}
-            </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('pedido')" :active="request()->routeIs('pedido')">
-                {{ __('Pedidos') }}
             </x-responsive-nav-link>
         </div>
 

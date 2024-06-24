@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('master::layouts.app')
 
 @section('content')
 

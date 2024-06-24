@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('master::layouts.app')
 
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/table.css') }}">

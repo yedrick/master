@@ -27,8 +27,6 @@
             "src/app/Exports",
             "src/app/Http",
             "src/app/Http/Controllers",
-            "src/app/Http/Middleware",
-            "src/app/Http/Requests",
             "src/app/Listeners",
             "src/app/Models",
             "src/app/Providers",

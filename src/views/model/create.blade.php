@@ -74,9 +74,9 @@
                                         value="{{ old($field->name, isset($model) ? $model->{$field->name} : '') }}" />
                                 @endif
 
-                                @error($field->name)
+                                {{-- @error($field->name)
                                     <span class="text-danger">{{ $message }}</span>
-                                @enderror
+                                @enderror --}}
 
 
                             </div>

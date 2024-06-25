@@ -45,9 +45,9 @@ class FuncNode {
             $node=Node::create([
                 'name'=>$name,
                 'table_name'=>$tabla,
-                'singular'=>'node.'.$name,
                 'model'=>$model,
                 'plural'=>'nodes.'.$name,
+                'singular'=>'node.'.$name,
             ]);
         }
     }
